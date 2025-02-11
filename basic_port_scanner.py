@@ -46,7 +46,7 @@ def port_scan(target_ip):
         
         print(Fore.YELLOW + f"Scanning {ip}")
         
-        for port in range(20,90):
+        for port in range(20,90): # Change this to reflect the port range that you want to scan.
             sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             sock.settimeout(1)
             result = sock.connect_ex((ip, port))
