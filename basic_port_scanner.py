@@ -65,7 +65,7 @@ def port_scan(target_ip):
          
     except socket.error:
       print(Fore.RED + f"Could not connect to the server")
-        
+      sys.exit()
 
                   
 port_scan(target_ip)        
